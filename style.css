@@ -1,4 +1,5 @@
 body {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +19,29 @@ body {
   margin: 1em;
 }
 
+.city .temp {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 500px;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.icon-des .humidity .wind {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .temp {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .icon-des {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .search {
@@ -44,7 +61,7 @@ button {
 }
 
 button:hover {
-    background: #7c7c7c6b;
+  background: #7c7c7c6b;
 }
 
 input.search-bar {
@@ -56,4 +73,19 @@ input.search-bar {
   color: white;
   font-size: 125%;
   width: 75%;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
 }
