@@ -25,6 +25,10 @@ body {
     font-size: 500px;
 }
 
+.temp {
+  font-size: 2.5rem;
+}
+
 .description {
   text-transform: capitalize;
 }
